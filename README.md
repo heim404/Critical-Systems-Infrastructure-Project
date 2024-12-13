@@ -1,10 +1,10 @@
-Critical Systems Infrastructure Project
+# Critical Systems Infrastructure Project
 
-Overview
+## Overview
 
 This project demonstrates the configuration and implementation of critical systems infrastructure with an emphasis on redundancy, high availability, scalability, and monitoring. The environment includes web servers, SQL servers, load balancers, and monitoring tools, implemented using virtualization and automation.
 
-Objectives
+## Objectives
 
 Build a resilient and efficient infrastructure aligned with industry best practices.
 
@@ -12,10 +12,10 @@ Ensure redundancy and high availability using technologies like RAID1, GlusterFS
 
 Implement monitoring with tools such as Cacti and Ganglia.
 
-Architecture
+## Architecture
 ![Architecture Overview](./architecture.png)
 
-Technologies Used
+## Technologies Used
 
 Virtualization: Virtualized machines running Ubuntu 18.
 
@@ -31,7 +31,7 @@ Monitoring Tools: Cacti, Ganglia.
 
 Automation: Shell scripts for configuration and deployment via Vagrant.
 
-Infrastructure Components
+## Infrastructure Components
 
 1. Web Servers
 
@@ -59,21 +59,7 @@ Cacti: Provides SNMP-based infrastructure monitoring.
 
 Ganglia: Visualizes server metrics and cluster status.
 
-Scripts and Automation
-
-RAID1 Configuration: install_raid.sh for creating RAID1 arrays.
-
-GlusterFS Configuration: install_glusterfs_web.sh, install_glusterfs_sql.sh.
-
-Nginx Setup: install_nginx.sh.
-
-Database Configuration: install_sql_mariadb.sh.
-
-Load Balancer Setup: install_haproxy.sh.
-
-Monitoring Tools: Setup scripts for Cacti and Ganglia.
-
-Key Features
+## Key Features
 
 Redundancy: RAID1 and GlusterFS ensure data integrity and availability.
 
@@ -83,7 +69,7 @@ Load Balancing: HAProxy distributes traffic across web servers.
 
 Monitoring: SNMP-based monitoring through Cacti and performance visualization with Ganglia.
 
-Testing and Evaluation
+## Testing and Evaluation
 
 Stress-tested using Apache JMeter with 10 concurrent threads.
 
